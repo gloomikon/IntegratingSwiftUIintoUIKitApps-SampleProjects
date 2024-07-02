@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21223" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Rxy-lS-atI">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21204"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Walks View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WalksViewController" customModule="NatureWalks_final" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MgK-Cm-8no">
+                        <barButtonItem key="rightBarButtonItem" title="Walk Durations" image="chart.bar.fill" catalog="system" id="sRy-f7-aKg">
+                            <connections>
+                                <segue destination="6kC-bW-PdG" kind="presentation" destinationCreationSelector="showDurations:" id="Ktr-xL-20P"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056.9230769230769" y="3.5545023696682461"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yoc-zB-gPr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Rxy-lS-atI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VkK-fs-t45">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="cok-Q8-0rG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B9r-0f-dHf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="127.69230769230769" y="3.5545023696682461"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NV0-Oz-Ydv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6kC-bW-PdG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VEy-sd-oNX">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="h8w-tf-bGq" kind="relationship" relationship="rootViewController" id="ThO-T7-Wgs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mx0-7v-xvY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1973.8461538461538" y="3.5545023696682461"/>
+        </scene>
+        <!--Walk Durations-->
+        <scene sceneID="I1Q-9W-Mde">
+            <objects>
+                <viewController id="h8w-tf-bGq" customClass="WalkDurationsViewController" customModule="NatureWalks_final" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MRX-uc-TeC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="OMt-g2-06q"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Walk Durations" id="w7x-Fh-Lkr">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="HZk-Xd-QqD">
+                            <connections>
+                                <action selector="dismissDurations:" destination="h8w-tf-bGq" id="iS1-jw-hhv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o6X-jc-ciL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2825" y="5"/>
+        </scene>
+        <!--Walk Detail View Controller-->
+        <scene sceneID="39m-xn-Tm6">
+            <objects>
+                <viewController storyboardIdentifier="WalkDetail" id="G4C-LZ-rmY" customClass="WalkDetailViewController" customModule="NatureWalks_final" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kMh-XN-w76">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cqs-BS-tGZ">
+                                <rect key="frame" x="0.0" y="47" width="390" height="797"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avon-trail" translatesAutoresizingMaskIntoConstraints="NO" id="zAx-rf-yYl">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="300"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" notEnabled="YES"/>
+                                            <bool key="isElement" value="NO"/>
+                                        </accessibility>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="epM-3X-vKI"/>
+                                        </constraints>
+                                    </imageView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="362" placeholderIntrinsicHeight="200" translatesAutoresizingMaskIntoConstraints="NO" id="Pgg-EX-0Rg">
+                                        <rect key="frame" x="14" y="360.33333333333331" width="362" height="199.99999999999994"/>
+                                        <connections>
+                                            <segue destination="mXN-2Y-Fsm" kind="embed" id="to3-AE-gx6"/>
+                                        </connections>
+                                    </containerView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwr-Vh-hjU">
+                                        <rect key="frame" x="14" y="320" width="362" height="20.333333333333314"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="bwr-Vh-hjU" firstAttribute="top" secondItem="zAx-rf-yYl" secondAttribute="bottom" constant="20" id="2vJ-Ol-93L"/>
+                                    <constraint firstItem="zAx-rf-yYl" firstAttribute="top" secondItem="eSz-oW-Jqa" secondAttribute="top" id="5JD-9B-ImQ"/>
+                                    <constraint firstItem="bwr-Vh-hjU" firstAttribute="leading" secondItem="eSz-oW-Jqa" secondAttribute="leading" constant="14" id="Dbu-34-S0I"/>
+                                    <constraint firstItem="zAx-rf-yYl" firstAttribute="leading" secondItem="eSz-oW-Jqa" secondAttribute="leading" id="F1L-Vx-pKz"/>
+                                    <constraint firstItem="eSz-oW-Jqa" firstAttribute="trailing" secondItem="bwr-Vh-hjU" secondAttribute="trailing" constant="14" id="Y5a-1c-blO"/>
+                                    <constraint firstItem="Pgg-EX-0Rg" firstAttribute="top" secondItem="bwr-Vh-hjU" secondAttribute="bottom" constant="20" id="mbv-ZL-tWm"/>
+                                    <constraint firstItem="zAx-rf-yYl" firstAttribute="trailing" secondItem="eSz-oW-Jqa" secondAttribute="trailing" id="vfb-Sb-Q4F"/>
+                                    <constraint firstItem="eSz-oW-Jqa" firstAttribute="trailing" secondItem="Pgg-EX-0Rg" secondAttribute="trailing" constant="14" id="yMW-86-NsR"/>
+                                    <constraint firstItem="Pgg-EX-0Rg" firstAttribute="leading" secondItem="eSz-oW-Jqa" secondAttribute="leading" constant="14" id="ybk-E0-kDh"/>
+                                    <constraint firstItem="Pgg-EX-0Rg" firstAttribute="bottom" secondItem="eSz-oW-Jqa" secondAttribute="bottom" id="ymx-bV-ldV"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="eSz-oW-Jqa"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Gwf-v7-pW6"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xpp-uU-K27"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="cqs-BS-tGZ" secondAttribute="bottom" id="3Vt-q2-NgB"/>
+                            <constraint firstItem="xpp-uU-K27" firstAttribute="trailing" secondItem="cqs-BS-tGZ" secondAttribute="trailing" id="Caw-Vm-mdq"/>
+                            <constraint firstItem="zAx-rf-yYl" firstAttribute="width" secondItem="xpp-uU-K27" secondAttribute="width" id="HXA-NM-4AS"/>
+                            <constraint firstItem="cqs-BS-tGZ" firstAttribute="leading" secondItem="xpp-uU-K27" secondAttribute="leading" id="Ocr-m3-6xg"/>
+                            <constraint firstItem="cqs-BS-tGZ" firstAttribute="top" secondItem="xpp-uU-K27" secondAttribute="top" id="dz0-VQ-Dwm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="bwr-Vh-hjU" id="yW1-Sc-Du4"/>
+                        <outlet property="imageView" destination="zAx-rf-yYl" id="lsB-pD-4JO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PEj-UU-J55" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3" y="739"/>
+        </scene>
+        <!--Walk Info View Controller-->
+        <scene sceneID="WXB-9k-BlK">
+            <objects>
+                <hostingController id="mXN-2Y-Fsm" customClass="WalkInfoViewController" customModule="NatureWalks_final" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VVi-wy-oYu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057" y="739"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" systemColor="systemIndigoColor"/>
+    <resources>
+        <image name="avon-trail" width="4032" height="3024"/>
+        <image name="chart.bar.fill" catalog="system" width="128" height="90"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21223" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tv8-V1-IBJ">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21204"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Parks View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ParksViewController" customModule="BestParks_starter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aBc-Jd-t7q">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="FNz-bC-Piw">
+                            <connections>
+                                <action selector="addPark:" destination="BYZ-38-t0r" id="3b0-Zl-p1z"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addParkButton" destination="FNz-bC-Piw" id="7uL-10-p4R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="990.76923076923072" y="-2.1327014218009479"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="btg-NQ-RwM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tv8-V1-IBJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XuW-Ea-gNH">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="IwL-v4-umt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fzm-4x-Pgn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="64.615384615384613" y="-2.1327014218009479"/>
+        </scene>
+        <!--Park Detail View Controller-->
+        <scene sceneID="lJU-X8-rNO">
+            <objects>
+                <viewController storyboardIdentifier="ParkDetail" id="rAc-2L-u5P" customClass="ParkDetailViewController" customModule="BestParks_final" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dH7-S8-hqX">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SUe-Wc-Tgy">
+                                <rect key="frame" x="0.0" y="47" width="390" height="797"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arthurs-pass" translatesAutoresizingMaskIntoConstraints="NO" id="gCI-Mb-yoz">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="305.33333333333331"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Mv8-rh-hqa">
+                                        <rect key="frame" x="12" y="335.33333333333331" width="366" height="309.99999999999994"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Park name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dpg-xC-JYD">
+                                                <rect key="frame" x="0.0" y="0.0" width="126.33333333333333" height="33.666666666666664"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Park description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TcZ-m5-ZEl">
+                                                <rect key="frame" x="0.0" y="53.666666666666686" width="123.66666666666667" height="20.333333333333329"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="PDe-vs-413">
+                                                <rect key="frame" x="0.0" y="94" width="230.66666666666666" height="216"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visiting date:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2P-ZO-dXM">
+                                                        <rect key="frame" x="0.0" y="98.333333333333314" width="94.333333333333329" height="19.333333333333329"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <datePicker contentMode="scaleAspectFit" contentHorizontalAlignment="right" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="dCA-QN-7RD">
+                                                        <rect key="frame" x="114.33333333333334" y="0.0" width="116.33333333333334" height="216"/>
+                                                        <date key="minimumDate" timeIntervalSinceReferenceDate="683722800">
+                                                            <!--2022-09-01 11:00:00 +0000-->
+                                                        </date>
+                                                        <connections>
+                                                            <action selector="visitingDateChanged:" destination="rAc-2L-u5P" eventType="valueChanged" id="T27-pO-gbu"/>
+                                                        </connections>
+                                                    </datePicker>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="gCI-Mb-yoz" firstAttribute="bottom" secondItem="Mv8-rh-hqa" secondAttribute="top" constant="-30" id="9xE-q4-cXS"/>
+                                    <constraint firstItem="gCI-Mb-yoz" firstAttribute="trailing" secondItem="cIr-jE-dda" secondAttribute="trailing" id="C4O-pv-g6G"/>
+                                    <constraint firstItem="Mv8-rh-hqa" firstAttribute="bottom" secondItem="cIr-jE-dda" secondAttribute="bottom" constant="12" id="Xpk-qS-S4o"/>
+                                    <constraint firstItem="cIr-jE-dda" firstAttribute="trailing" secondItem="Mv8-rh-hqa" secondAttribute="trailing" constant="12" id="YAb-DF-kBL"/>
+                                    <constraint firstItem="Mv8-rh-hqa" firstAttribute="leading" secondItem="cIr-jE-dda" secondAttribute="leading" constant="12" id="c1p-d7-GI3"/>
+                                    <constraint firstItem="gCI-Mb-yoz" firstAttribute="leading" secondItem="cIr-jE-dda" secondAttribute="leading" id="can-id-wku"/>
+                                    <constraint firstItem="gCI-Mb-yoz" firstAttribute="top" secondItem="cIr-jE-dda" secondAttribute="top" id="suY-R3-v3R"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="cIr-jE-dda"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="LMX-Re-NfE"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yft-pn-XW2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SUe-Wc-Tgy" firstAttribute="top" secondItem="yft-pn-XW2" secondAttribute="top" id="IIM-Hd-EZf"/>
+                            <constraint firstItem="SUe-Wc-Tgy" firstAttribute="bottom" secondItem="dH7-S8-hqX" secondAttribute="bottom" id="L4V-qU-nPb"/>
+                            <constraint firstItem="gCI-Mb-yoz" firstAttribute="width" secondItem="yft-pn-XW2" secondAttribute="width" id="NNK-Uc-GWR"/>
+                            <constraint firstItem="SUe-Wc-Tgy" firstAttribute="leading" secondItem="yft-pn-XW2" secondAttribute="leading" id="V3h-FY-bMj"/>
+                            <constraint firstItem="gCI-Mb-yoz" firstAttribute="height" secondItem="yft-pn-XW2" secondAttribute="height" multiplier="0.4" id="ag2-Dt-eIp"/>
+                            <constraint firstItem="yft-pn-XW2" firstAttribute="trailing" secondItem="SUe-Wc-Tgy" secondAttribute="trailing" id="zMc-Mg-ubf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="128-fj-eSt"/>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="TcZ-m5-ZEl" id="uRT-wS-7t7"/>
+                        <outlet property="imageView" destination="gCI-Mb-yoz" id="pFf-bY-dzW"/>
+                        <outlet property="nameLabel" destination="Dpg-xC-JYD" id="0yH-db-fj2"/>
+                        <outlet property="visitingDatePicker" destination="dCA-QN-7RD" id="NUH-2N-VHt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J6m-7t-Fb3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1898" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arthurs-pass" width="4312" height="2875"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

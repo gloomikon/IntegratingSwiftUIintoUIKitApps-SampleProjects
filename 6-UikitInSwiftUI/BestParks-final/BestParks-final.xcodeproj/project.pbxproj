@@ -1,0 +1,652 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		66E80D0B28C1054A004CB896 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E80D0A28C1054A004CB896 /* AppDelegate.swift */; };
+		66E80D0D28C1054A004CB896 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E80D0C28C1054A004CB896 /* SceneDelegate.swift */; };
+		66E80D1228C1054A004CB896 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66E80D1028C1054A004CB896 /* Main.storyboard */; };
+		66E80D1428C1054C004CB896 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66E80D1328C1054C004CB896 /* Assets.xcassets */; };
+		66E80D1728C1054C004CB896 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66E80D1528C1054C004CB896 /* LaunchScreen.storyboard */; };
+		66E80D2028C171C1004CB896 /* Park.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E80D1F28C171C1004CB896 /* Park.swift */; };
+		66E80D2228C171D5004CB896 /* ParksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E80D2128C171D5004CB896 /* ParksController.swift */; };
+		66E80D2428C171EB004CB896 /* ParksProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E80D2328C171EB004CB896 /* ParksProvider.swift */; };
+		66E80D2628C1721C004CB896 /* ParksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E80D2528C1721C004CB896 /* ParksViewController.swift */; };
+		66E80D2828C17236004CB896 /* ParkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E80D2728C17236004CB896 /* ParkDetailViewController.swift */; };
+		66E80D2A28C17249004CB896 /* ThemeColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E80D2928C17249004CB896 /* ThemeColorPickerViewController.swift */; };
+		66E80D2C28C1725F004CB896 /* ThemeColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E80D2B28C1725F004CB896 /* ThemeColorPickerView.swift */; };
+		66E80D3628C183FA004CB896 /* BestParksSwiftUI_finalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E80D3528C183FA004CB896 /* BestParksSwiftUI_finalApp.swift */; };
+		66E80D3828C183FA004CB896 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E80D3728C183FA004CB896 /* ContentView.swift */; };
+		66E80D3A28C183FC004CB896 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66E80D3928C183FC004CB896 /* Assets.xcassets */; };
+		66E80D3D28C183FC004CB896 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66E80D3C28C183FC004CB896 /* Preview Assets.xcassets */; };
+		66E80D4128C18411004CB896 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66E80D1328C1054C004CB896 /* Assets.xcassets */; };
+		66E80D4528C1B2EB004CB896 /* ParksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E80D2128C171D5004CB896 /* ParksController.swift */; };
+		66E80D4628C1B7B1004CB896 /* Park.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E80D1F28C171C1004CB896 /* Park.swift */; };
+		66E80D4728C1B7B8004CB896 /* ParksProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E80D2328C171EB004CB896 /* ParksProvider.swift */; };
+		66E80D5028C1B9D4004CB896 /* ParksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E80D4F28C1B9D4004CB896 /* ParksView.swift */; };
+		66E80D5228C1BB92004CB896 /* ParkListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E80D5128C1BB91004CB896 /* ParkListRow.swift */; };
+		66E80D5428C1BC84004CB896 /* ParksController+sampleParks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E80D5328C1BC84004CB896 /* ParksController+sampleParks.swift */; };
+		66E80D5728C1BF8F004CB896 /* ParkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E80D5628C1BF8F004CB896 /* ParkDetailView.swift */; };
+		66E80D5928C1CCDA004CB896 /* SplitViewDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E80D5828C1CCDA004CB896 /* SplitViewDetailView.swift */; };
+		66E80D5B28C1CD56004CB896 /* EmptySelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E80D5A28C1CD56004CB896 /* EmptySelectionView.swift */; };
+		66E80D8828C442D3004CB896 /* ThemeColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E80D8728C442D3004CB896 /* ThemeColorPicker.swift */; };
+		66E80D8928C442EE004CB896 /* ThemeColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E80D2B28C1725F004CB896 /* ThemeColorPickerView.swift */; };
+		66E80D8D28C48B3D004CB896 /* ThemeColorPickerSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E80D8C28C48B3D004CB896 /* ThemeColorPickerSheet.swift */; };
+		66E80D8E28C4E2D5004CB896 /* ParkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E80D2728C17236004CB896 /* ParkDetailViewController.swift */; };
+		66E80D8F28C5607A004CB896 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66E80D1028C1054A004CB896 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		66E80D0728C1054A004CB896 /* BestParks-final.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BestParks-final.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66E80D0A28C1054A004CB896 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		66E80D0C28C1054A004CB896 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		66E80D1128C1054A004CB896 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		66E80D1328C1054C004CB896 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66E80D1628C1054C004CB896 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		66E80D1828C1054C004CB896 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66E80D1F28C171C1004CB896 /* Park.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Park.swift; sourceTree = "<group>"; };
+		66E80D2128C171D5004CB896 /* ParksController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksController.swift; sourceTree = "<group>"; };
+		66E80D2328C171EB004CB896 /* ParksProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksProvider.swift; sourceTree = "<group>"; };
+		66E80D2528C1721C004CB896 /* ParksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksViewController.swift; sourceTree = "<group>"; };
+		66E80D2728C17236004CB896 /* ParkDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkDetailViewController.swift; sourceTree = "<group>"; };
+		66E80D2928C17249004CB896 /* ThemeColorPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeColorPickerViewController.swift; sourceTree = "<group>"; };
+		66E80D2B28C1725F004CB896 /* ThemeColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeColorPickerView.swift; sourceTree = "<group>"; };
+		66E80D3328C183FA004CB896 /* BestParksSwiftUI-final.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BestParksSwiftUI-final.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66E80D3528C183FA004CB896 /* BestParksSwiftUI_finalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestParksSwiftUI_finalApp.swift; sourceTree = "<group>"; };
+		66E80D3728C183FA004CB896 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		66E80D3928C183FC004CB896 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66E80D3C28C183FC004CB896 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		66E80D4328C1865A004CB896 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		66E80D4F28C1B9D4004CB896 /* ParksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksView.swift; sourceTree = "<group>"; };
+		66E80D5128C1BB91004CB896 /* ParkListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkListRow.swift; sourceTree = "<group>"; };
+		66E80D5328C1BC84004CB896 /* ParksController+sampleParks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ParksController+sampleParks.swift"; sourceTree = "<group>"; };
+		66E80D5628C1BF8F004CB896 /* ParkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkDetailView.swift; sourceTree = "<group>"; };
+		66E80D5828C1CCDA004CB896 /* SplitViewDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewDetailView.swift; sourceTree = "<group>"; };
+		66E80D5A28C1CD56004CB896 /* EmptySelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptySelectionView.swift; sourceTree = "<group>"; };
+		66E80D8728C442D3004CB896 /* ThemeColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeColorPicker.swift; sourceTree = "<group>"; };
+		66E80D8C28C48B3D004CB896 /* ThemeColorPickerSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeColorPickerSheet.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66E80D0428C1054A004CB896 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66E80D3028C183FA004CB896 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		66E80CFE28C1054A004CB896 = {
+			isa = PBXGroup;
+			children = (
+				66E80D0928C1054A004CB896 /* BestParks-final */,
+				66E80D3428C183FA004CB896 /* BestParksSwiftUI-final */,
+				66E80D0828C1054A004CB896 /* Products */,
+				66E80D4228C1865A004CB896 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		66E80D0828C1054A004CB896 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66E80D0728C1054A004CB896 /* BestParks-final.app */,
+				66E80D3328C183FA004CB896 /* BestParksSwiftUI-final.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66E80D0928C1054A004CB896 /* BestParks-final */ = {
+			isa = PBXGroup;
+			children = (
+				66E80D1E28C171B2004CB896 /* Data */,
+				66E80D0A28C1054A004CB896 /* AppDelegate.swift */,
+				66E80D0C28C1054A004CB896 /* SceneDelegate.swift */,
+				66E80D5C28C1DBF1004CB896 /* Parks */,
+				66E80D5D28C1DC06004CB896 /* ParkDetail */,
+				66E80D1028C1054A004CB896 /* Main.storyboard */,
+				66E80D1328C1054C004CB896 /* Assets.xcassets */,
+				66E80D1528C1054C004CB896 /* LaunchScreen.storyboard */,
+				66E80D1828C1054C004CB896 /* Info.plist */,
+			);
+			path = "BestParks-final";
+			sourceTree = "<group>";
+		};
+		66E80D1E28C171B2004CB896 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				66E80D1F28C171C1004CB896 /* Park.swift */,
+				66E80D2128C171D5004CB896 /* ParksController.swift */,
+				66E80D2328C171EB004CB896 /* ParksProvider.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		66E80D2E28C17283004CB896 /* ThemeColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				66E80D2B28C1725F004CB896 /* ThemeColorPickerView.swift */,
+				66E80D2928C17249004CB896 /* ThemeColorPickerViewController.swift */,
+			);
+			path = ThemeColorPicker;
+			sourceTree = "<group>";
+		};
+		66E80D3428C183FA004CB896 /* BestParksSwiftUI-final */ = {
+			isa = PBXGroup;
+			children = (
+				66E80D3528C183FA004CB896 /* BestParksSwiftUI_finalApp.swift */,
+				66E80D3728C183FA004CB896 /* ContentView.swift */,
+				66E80D4A28C1B96A004CB896 /* Parks */,
+				66E80D5528C1BF29004CB896 /* ParkDetail */,
+				66E80D3928C183FC004CB896 /* Assets.xcassets */,
+				66E80D3B28C183FC004CB896 /* Preview Content */,
+			);
+			path = "BestParksSwiftUI-final";
+			sourceTree = "<group>";
+		};
+		66E80D3B28C183FC004CB896 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				66E80D3C28C183FC004CB896 /* Preview Assets.xcassets */,
+				66E80D5328C1BC84004CB896 /* ParksController+sampleParks.swift */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		66E80D4228C1865A004CB896 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66E80D4328C1865A004CB896 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		66E80D4A28C1B96A004CB896 /* Parks */ = {
+			isa = PBXGroup;
+			children = (
+				66E80D8628C442AE004CB896 /* ThemeColorPicker */,
+				66E80D4F28C1B9D4004CB896 /* ParksView.swift */,
+				66E80D5128C1BB91004CB896 /* ParkListRow.swift */,
+			);
+			path = Parks;
+			sourceTree = "<group>";
+		};
+		66E80D5528C1BF29004CB896 /* ParkDetail */ = {
+			isa = PBXGroup;
+			children = (
+				66E80D5628C1BF8F004CB896 /* ParkDetailView.swift */,
+				66E80D5828C1CCDA004CB896 /* SplitViewDetailView.swift */,
+				66E80D5A28C1CD56004CB896 /* EmptySelectionView.swift */,
+			);
+			path = ParkDetail;
+			sourceTree = "<group>";
+		};
+		66E80D5C28C1DBF1004CB896 /* Parks */ = {
+			isa = PBXGroup;
+			children = (
+				66E80D2528C1721C004CB896 /* ParksViewController.swift */,
+				66E80D2E28C17283004CB896 /* ThemeColorPicker */,
+			);
+			path = Parks;
+			sourceTree = "<group>";
+		};
+		66E80D5D28C1DC06004CB896 /* ParkDetail */ = {
+			isa = PBXGroup;
+			children = (
+				66E80D2728C17236004CB896 /* ParkDetailViewController.swift */,
+			);
+			path = ParkDetail;
+			sourceTree = "<group>";
+		};
+		66E80D8628C442AE004CB896 /* ThemeColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				66E80D8728C442D3004CB896 /* ThemeColorPicker.swift */,
+				66E80D8C28C48B3D004CB896 /* ThemeColorPickerSheet.swift */,
+			);
+			path = ThemeColorPicker;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		66E80D0628C1054A004CB896 /* BestParks-final */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66E80D1B28C1054C004CB896 /* Build configuration list for PBXNativeTarget "BestParks-final" */;
+			buildPhases = (
+				66E80D0328C1054A004CB896 /* Sources */,
+				66E80D0428C1054A004CB896 /* Frameworks */,
+				66E80D0528C1054A004CB896 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BestParks-final";
+			productName = "BestParks-final";
+			productReference = 66E80D0728C1054A004CB896 /* BestParks-final.app */;
+			productType = "com.apple.product-type.application";
+		};
+		66E80D3228C183FA004CB896 /* BestParksSwiftUI-final */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66E80D4028C183FC004CB896 /* Build configuration list for PBXNativeTarget "BestParksSwiftUI-final" */;
+			buildPhases = (
+				66E80D2F28C183FA004CB896 /* Sources */,
+				66E80D3028C183FA004CB896 /* Frameworks */,
+				66E80D3128C183FA004CB896 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BestParksSwiftUI-final";
+			productName = "BestParksSwiftUI-final";
+			productReference = 66E80D3328C183FA004CB896 /* BestParksSwiftUI-final.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		66E80CFF28C1054A004CB896 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					66E80D0628C1054A004CB896 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					66E80D3228C183FA004CB896 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = 66E80D0228C1054A004CB896 /* Build configuration list for PBXProject "BestParks-final" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 66E80CFE28C1054A004CB896;
+			productRefGroup = 66E80D0828C1054A004CB896 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				66E80D0628C1054A004CB896 /* BestParks-final */,
+				66E80D3228C183FA004CB896 /* BestParksSwiftUI-final */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66E80D0528C1054A004CB896 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66E80D1728C1054C004CB896 /* LaunchScreen.storyboard in Resources */,
+				66E80D1428C1054C004CB896 /* Assets.xcassets in Resources */,
+				66E80D1228C1054A004CB896 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66E80D3128C183FA004CB896 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66E80D3D28C183FC004CB896 /* Preview Assets.xcassets in Resources */,
+				66E80D4128C18411004CB896 /* Assets.xcassets in Resources */,
+				66E80D3A28C183FC004CB896 /* Assets.xcassets in Resources */,
+				66E80D8F28C5607A004CB896 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66E80D0328C1054A004CB896 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66E80D2C28C1725F004CB896 /* ThemeColorPickerView.swift in Sources */,
+				66E80D2828C17236004CB896 /* ParkDetailViewController.swift in Sources */,
+				66E80D2A28C17249004CB896 /* ThemeColorPickerViewController.swift in Sources */,
+				66E80D0B28C1054A004CB896 /* AppDelegate.swift in Sources */,
+				66E80D0D28C1054A004CB896 /* SceneDelegate.swift in Sources */,
+				66E80D2028C171C1004CB896 /* Park.swift in Sources */,
+				66E80D2428C171EB004CB896 /* ParksProvider.swift in Sources */,
+				66E80D2228C171D5004CB896 /* ParksController.swift in Sources */,
+				66E80D2628C1721C004CB896 /* ParksViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66E80D2F28C183FA004CB896 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66E80D8928C442EE004CB896 /* ThemeColorPickerView.swift in Sources */,
+				66E80D4528C1B2EB004CB896 /* ParksController.swift in Sources */,
+				66E80D5728C1BF8F004CB896 /* ParkDetailView.swift in Sources */,
+				66E80D5B28C1CD56004CB896 /* EmptySelectionView.swift in Sources */,
+				66E80D3828C183FA004CB896 /* ContentView.swift in Sources */,
+				66E80D3628C183FA004CB896 /* BestParksSwiftUI_finalApp.swift in Sources */,
+				66E80D8828C442D3004CB896 /* ThemeColorPicker.swift in Sources */,
+				66E80D8E28C4E2D5004CB896 /* ParkDetailViewController.swift in Sources */,
+				66E80D8D28C48B3D004CB896 /* ThemeColorPickerSheet.swift in Sources */,
+				66E80D5428C1BC84004CB896 /* ParksController+sampleParks.swift in Sources */,
+				66E80D5028C1B9D4004CB896 /* ParksView.swift in Sources */,
+				66E80D4728C1B7B8004CB896 /* ParksProvider.swift in Sources */,
+				66E80D5228C1BB92004CB896 /* ParkListRow.swift in Sources */,
+				66E80D5928C1CCDA004CB896 /* SplitViewDetailView.swift in Sources */,
+				66E80D4628C1B7B1004CB896 /* Park.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		66E80D1028C1054A004CB896 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66E80D1128C1054A004CB896 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		66E80D1528C1054C004CB896 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66E80D1628C1054C004CB896 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		66E80D1928C1054C004CB896 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		66E80D1A28C1054C004CB896 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		66E80D1C28C1054C004CB896 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BestParks-final/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "BestParks-final";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.BestParks-final";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		66E80D1D28C1054C004CB896 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BestParks-final/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "BestParks-final";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.BestParks-final";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		66E80D3E28C183FC004CB896 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BestParksSwiftUI-final/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "BestParks-final";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.BestParks-final";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		66E80D3F28C183FC004CB896 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BestParksSwiftUI-final/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "BestParks-final";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.BestParks-final";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66E80D0228C1054A004CB896 /* Build configuration list for PBXProject "BestParks-final" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66E80D1928C1054C004CB896 /* Debug */,
+				66E80D1A28C1054C004CB896 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66E80D1B28C1054C004CB896 /* Build configuration list for PBXNativeTarget "BestParks-final" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66E80D1C28C1054C004CB896 /* Debug */,
+				66E80D1D28C1054C004CB896 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66E80D4028C183FC004CB896 /* Build configuration list for PBXNativeTarget "BestParksSwiftUI-final" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66E80D3E28C183FC004CB896 /* Debug */,
+				66E80D3F28C183FC004CB896 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 66E80CFF28C1054A004CB896 /* Project object */;
+}
